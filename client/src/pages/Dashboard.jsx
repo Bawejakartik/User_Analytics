@@ -72,13 +72,36 @@ export default function Dashboard() {
 
   return (
     <div className="max-w-6xl mx-auto space-y-8">
-      {/* Page header */}
-      <div>
-        <h1 className="text-2xl font-bold text-slate-100">Overview</h1>
-        <p className="text-sm text-muted mt-1">Real-time analytics across all tracked sessions</p>
-      </div>
+ 
+    <div className="flex items-center justify-between">
+  <div>
+    <h1 className="text-2xl font-bold text-slate-100">Overview</h1>
+    <p className="text-sm text-muted mt-1">
+      Real-time analytics across all tracked sessions
+    </p>
+  </div>
 
-      {/* Stat cards */}
+  <button
+    onClick={refetch}
+    className="px-4 py-2 text-sm bg-brand-600 hover:bg-brand-700 text-white rounded-lg transition flex items-center gap-2"
+  >
+    <svg
+      className="w-4 h-4"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M4 4v6h6M20 20v-6h-6M20 8a8 8 0 00-13.657-5.657L4 4M20 20l-2.343-2.343A8 8 0 014 16"
+      />
+    </svg>
+    Refresh
+  </button>
+</div>
+   
       <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
         <StatCard
           label="Total Sessions"
@@ -134,7 +157,7 @@ export default function Dashboard() {
         />
       </div>
 
-      {/* Content grid */}
+    
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
         {/* Recent sessions */}
         <div className="lg:col-span-2 bg-card border border-border rounded-2xl p-6">
@@ -165,7 +188,7 @@ export default function Dashboard() {
           )}
         </div>
 
-        {/* Quick actions */}
+       
         <div className="space-y-4">
           <div className="bg-card border border-border rounded-2xl p-5">
             <h2 className="text-sm font-semibold text-slate-300 mb-4">Quick Actions</h2>
@@ -193,7 +216,6 @@ export default function Dashboard() {
             </div>
           </div>
 
-          {/* Event distribution hint */}
           <div className="bg-card border border-border rounded-2xl p-5">
             <h2 className="text-sm font-semibold text-slate-300 mb-3">Event Types</h2>
             <div className="space-y-2.5">

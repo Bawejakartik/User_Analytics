@@ -94,7 +94,7 @@ export default function HeatmapCanvas({ clicks, pageUrl }) {
         </div>
       </div>
 
-      {/* Legend */}
+     
       <div className="px-6 pb-5 flex flex-wrap gap-4 text-xs text-muted">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500 shadow" style={{ boxShadow: '0 0 6px rgba(239,68,68,0.6)' }} />

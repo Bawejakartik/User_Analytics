@@ -38,7 +38,7 @@ export default function Sessions() {
         </button>
       </div>
 
-      {/* Search */}
+     
       <div className="relative">
         <div className="absolute left-4 top-1/2 -translate-y-1/2 text-muted pointer-events-none">
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -65,7 +65,7 @@ export default function Sessions() {
         )}
       </div>
 
-      {/* Results */}
+    
       {filtered.length === 0 ? (
         <EmptyState
           icon="🔍"

@@ -48,7 +48,7 @@ export default function SessionDetails() {
         </span>
       </div>
 
-      {/* Header card */}
+      
       <div className="bg-card border border-border rounded-2xl p-6">
         <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-4">
           <div>
@@ -103,7 +103,6 @@ export default function SessionDetails() {
         )}
       </div>
 
-      {/* Events timeline */}
       {loading && <Loader message="Loading user journey…" />}
       {error && <ErrorState message={error} onRetry={refetch} />}
       {!loading && !error && events?.length === 0 && (

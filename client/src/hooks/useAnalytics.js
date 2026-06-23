@@ -16,7 +16,7 @@ export function useFetch(fetchFn, deps = []) {
     } finally {
       setLoading(false);
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   }, deps);
 
   return { data, loading, error, execute, setData };
@@ -27,7 +27,7 @@ export function useAutoFetch(fetchFn, deps = []) {
 
   useEffect(() => {
     execute();
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+  
   }, []);
 
   return { data, loading, error, refetch: execute, setData };

@@ -29,13 +29,13 @@ export default function Heatmap() {
 
   return (
     <div className="max-w-5xl mx-auto space-y-6">
-      {/* Header */}
+    
       <div>
         <h1 className="text-2xl font-bold text-slate-100">Heatmap</h1>
         <p className="text-sm text-muted mt-1">Visualize where users click across your tracked pages</p>
       </div>
 
-      {/* Page selector */}
+    
       {pagesLoading && <Loader message="Loading pages…" />}
       {pagesError && <ErrorState message={pagesError} />}
       {!pagesLoading && !pagesError && (
@@ -47,7 +47,6 @@ export default function Heatmap() {
         />
       )}
 
-      {/* Heatmap content */}
       {!selectedPage && !pagesLoading && (
         <div className="bg-card border border-border rounded-2xl flex flex-col items-center justify-center py-24 gap-4">
           <div className="w-16 h-16 rounded-2xl bg-surface border border-border flex items-center justify-center">

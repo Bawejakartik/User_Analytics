@@ -76,7 +76,7 @@ export default function Layout({ children }) {
         />
       )}
 
-      {/* Sidebar */}
+      
       <aside className={`
         fixed lg:static inset-y-0 left-0 z-30
         flex flex-col border-r border-border bg-panel

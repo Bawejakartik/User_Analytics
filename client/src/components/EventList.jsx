@@ -120,7 +120,7 @@ function EventNode({ event, index, isLast }) {
         )}
       </div>
 
-      {/* Index badge */}
+  
       <div className="flex-shrink-0 self-start mt-1.5">
         <span className="text-xs font-mono text-muted/50 select-none">
           {String(index + 1).padStart(2, '0')}
