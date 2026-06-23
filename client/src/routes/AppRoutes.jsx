@@ -11,7 +11,7 @@ export default function AppRoutes() {
       <Routes>
         <Route path="/"                    element={<Dashboard />} />
         <Route path="/sessions"            element={<Sessions />} />
-        <Route path="/session/:sessionId" element={<SessionDetails />} />
+        <Route path="/sessions/:sessionId" element={<SessionDetails />} />
         <Route path="/heatmap"  element={<Heatmap />} />
         <Route path="*" element={
           <div className="flex flex-col items-center justify-center py-32 gap-4">
