@@ -16,7 +16,7 @@
 
         async function sendEvent(eventData){
             try{
-              await fetch("http://localhost:4000/api/events",{
+              await fetch("https://user-analytics-1-vts3.onrender.com/api/events",{
                 method:"POST",
                 headers:{
                     "Content-Type":"application/json",

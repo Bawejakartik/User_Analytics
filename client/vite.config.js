@@ -7,7 +7,7 @@ export default defineConfig({
     
     proxy: {
       '/api': {
-        target: 'http://localhost:4000',
+        target: 'https://user-analytics-1-vts3.onrender.com',
         changeOrigin: true,
       }
     }
