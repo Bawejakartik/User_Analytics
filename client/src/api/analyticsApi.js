@@ -1,8 +1,8 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: '/api',
-  timeout: 100000000,
+  baseURL: 'https://user-analytics-1-vts3.onrender.com/api',
+  timeout: 10000000,
   headers: { 'Content-Type': 'application/json' },
 });
 
